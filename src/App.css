@@ -1,38 +1,72 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+@import url("https://fonts.googleapis.com/css2?family=Dosis:wght@600&display=swap");
+header {
+  width: 100%;
+  height: 50px;
+  background-color: #2f2;
+  padding: 2px;
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
   align-items: center;
+}
+header .logo {
+  display: inline-block;
+  padding: 0 5px 0 5px;
+  font-size: 20px;
+  font-family: "Dosis", sans-serif;
+}
+.new_todo_div {
+  display: flex;
+  width: 100%;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  padding: 5px;
 }
-
-.App-link {
-  color: #61dafb;
+.btn {
+  width: 60px;
+  text-align: center;
+  margin: 2px;
+  width: 100%;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+#newtodo {
+  outline: none;
+  border: 0;
+  padding: 5px;
+  width: 100%;
+  font-size: 20px;
+  border-bottom: 2px solid;
+  border-color: rgb(121, 240, 147);
+  overflow: hidden;
+  transition: all 500ms ease-in-out;
+}
+#newtodo:hover {
+  border-color: hotpink;
+}
+.container {
+  width: 100%;
+  max-width: 600px;
+  border: 1px solid grey;
+  border-top: 0;
+  margin: auto;
+}
+.todo {
+  margin: 4px;
+  padding: 5px;
+  border: 1px solid gainsboro;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.todo:hover {
+  box-shadow: 0 0 10px -10px black;
+}
+.todo p {
+  font-size: large;
+  font-family: "Dosis", sans-serif;
+}
+.no_todo_style {
+  text-align: center;
+  font-size: 20px;
+  padding: 5px;
+  border-top: 1px solid gainsboro;
 }
